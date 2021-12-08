@@ -202,8 +202,7 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
-  arm64-darwin-21
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
