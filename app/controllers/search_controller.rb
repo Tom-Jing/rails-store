@@ -10,6 +10,11 @@ class SearchController < ApplicationController
 
   def create
     @keyword = params[:keyword]
+
+    if @keyword == ''
+      @products = Product.all
+    end
+
     key = @keyword.strip.downcase
 
     if /[^\d\.]/ =~ key  #regex
