@@ -10,14 +10,10 @@ class SearchController < ApplicationController
 
   def create
     @keyword = params[:keyword]
-
-    if @keyword == ''
-      @products = Product.all
-    end
-
     key = @keyword.strip.downcase
-
-    if /[^\d\.]/ =~ key  #regex
+    if key == ''
+      @products = Product.all
+    elsif /[^\d\.]/ =~ key  #regex
       @products = Product.where('description like ? or name like ?', %{%#{key}%}, %{%#{key}%})
     else
       @products = Product.where('description like ? or name like ? or price = ?', %{%#{key}%}, %{%#{key}%}, key)
