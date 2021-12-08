@@ -202,7 +202,7 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
-  ruby
+  arm64-darwin-21
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
