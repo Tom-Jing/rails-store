@@ -9,6 +9,9 @@
             background: #141; 
             font-family: sans-serif; 
             padding: 0.2em 1em; 
+        }
+        div {
+            margin-top: 15px;
         } 
     } 
     form { 
@@ -25,9 +28,6 @@
         } 
         .submit { 
             margin-left: 4em; 
-        } 
-        br { 
-            display: none 
         } 
     } 
 } 
