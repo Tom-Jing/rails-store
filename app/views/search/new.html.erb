@@ -2,7 +2,7 @@
 
 <div class="search_block">
     <%= form_tag do %>
-        <%= text_field_tag :keyword, params[:keyword], {value:"#{@keyword}"} %>
+        <%= text_field_tag :keyword, params[:keyword] %>
         <%= button_to "Search"%>
     <% end %>
 </div>

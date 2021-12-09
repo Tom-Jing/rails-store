@@ -13,10 +13,8 @@ class SearchController < ApplicationController
     key = @keyword.strip.downcase
     if key == ''
       @products = Product.all
-    elsif /[^\d\.]/ =~ key  #regex
-      @products = Product.where('description like ? or name like ?', %{%#{key}%}, %{%#{key}%})
     else
-      @products = Product.where('description like ? or name like ? or price = ?', %{%#{key}%}, %{%#{key}%}, key)
+      @products = Product.where("lower(name) LIKE ?", "%#{key}%")
     end
 
     render :new
