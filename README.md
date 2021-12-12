@@ -32,6 +32,3 @@ SQLite is not a good fit for heroku's disk, use postgreSQL for production instea
 name: admin
 password: 123456
 ```
-
-## Contact Me
-<p>Email: j1ngyuguang@outlook.com</p>
