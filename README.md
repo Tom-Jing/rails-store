@@ -22,3 +22,9 @@ rails db:seed
 
 rails server
 ```
+
+## Test account
+```
+name: admin
+password: 123456
+```
