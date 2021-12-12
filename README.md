@@ -1,10 +1,5 @@
 # Online Super Store
-<p>COEN 278 Assignment 4 rails online store project</p>
-<hr />
-
-## Author
-<p>Student Name: Yuguang Jing</p>
-<p>Student ID: 1607784</p>
+<p>rails online store project</p>
 <hr />
 
 ## Live Demo
@@ -23,8 +18,20 @@ rails db:seed
 rails server
 ```
 
-## Test account
+## Deployment Instructions(to Heroku)
+```
+SQLite is not a good fit for heroku's disk, use postgreSQL for production instead, check Gemfile
+1. heroku create
+2. git push heroku master
+3. heroku run rails db:migrate
+4. heroku run rails db:seed
+```
+
+## Test Account
 ```
 name: admin
 password: 123456
 ```
+
+## Contact Me
+<p>Email: j1ngyuguang@outlook.com</p>
